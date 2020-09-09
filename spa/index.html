@@ -1,0 +1,30 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: miss zhang
+ * @Date: 2020-09-09 09:16:18
+ * @LastEditors: zhang zi fang
+ * @LastEditTime: 2020-09-09 11:54:25
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./w-fs.js"></script>
+    <script>
+        install()
+        async function init() {
+            let data = await wFs.readFileSync('spa/test.js', 'utf-8', function (err) { })
+        }
+        init()
+    </script>
+</body>
+
+</html>

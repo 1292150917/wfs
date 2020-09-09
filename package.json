@@ -1,0 +1,24 @@
+{
+  "name": "gonyinglian",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "forever start spa/index.js && cross-env NODE_ENV=production  webpack-dev-server --hot",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "list": "forever list",
+    "stop": "forever stop spa/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "forever": "^3.0.2",
+    "webpack": "^4.41.5"
+  }
+}
